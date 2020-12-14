@@ -39,6 +39,7 @@ export default {
   },
 
   generate: {
-    routes: ['/new']
+    routes: ['/new'],
+    exclude: [/spa-fallback/]
   }
 }

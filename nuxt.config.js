@@ -32,7 +32,17 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    '@nuxt/http',
+    '@nuxtjs/proxy'
   ],
+
+  http: {
+    // proxy: true
+  },
+
+  // proxy: {
+  //   '/api' : 'http://localhost:7071/api'
+  // },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
